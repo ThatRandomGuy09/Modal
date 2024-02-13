@@ -21,7 +21,6 @@ const testimonials = [
     title: "CEO",
     description: "This app has changed my life, cannot imagine working without it!",
   },
-  
 ];
 
 export const LandingContent = () => {
