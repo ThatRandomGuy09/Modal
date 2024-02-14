@@ -7,7 +7,7 @@ import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, Video
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-// import { FreeCounter } from "@/components/free-counter";
+import { FreeCounter } from "@/components/free-counter";
 
 const poppins = Montserrat ({ weight: '600', subsets: ['latin'] });
 
@@ -72,7 +72,7 @@ export const Sidebar = ({
             <Image fill alt="Logo" src="/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", poppins.className)}>
-            All-In-AI
+            Genius
           </h1>
         </Link>
         <div className="space-y-1">
@@ -93,10 +93,10 @@ export const Sidebar = ({
           ))}
         </div>
       </div>
-      {/* <FreeCounter 
+      <FreeCounter 
         apiLimitCount={apiLimitCount} 
         isPro={isPro}
-      /> */}
+      />
     </div>
   );
 };
